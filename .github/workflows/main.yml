@@ -3,6 +3,7 @@ on: [push]
 jobs:
   pruebas:
     runs-on: ubuntu-latest
+    environment: pruebas-ci
     steps:
       - name: Descargar el código
         uses: actions/checkout@v4
